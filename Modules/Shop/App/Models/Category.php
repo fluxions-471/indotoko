@@ -4,7 +4,7 @@ namespace Modules\Shop\App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Shop\Database\factories\CategoryFactory;
+use Modules\Shop\Database\Factories\CategoryFactory;
 
 use App\Traits\UuidTrait;
 

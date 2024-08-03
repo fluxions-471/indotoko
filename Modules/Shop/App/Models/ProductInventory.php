@@ -5,7 +5,7 @@ namespace Modules\Shop\App\Models;
 use App\Traits\UuidTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Modules\Shop\Database\factories\ProductInventoryFactory;
+use Modules\Shop\Database\Factories\ProductInventoryFactory;
 
 class ProductInventory extends Model
 {
