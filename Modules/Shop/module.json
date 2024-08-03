@@ -8,6 +8,6 @@
         "Modules\\Shop\\App\\Providers\\ShopServiceProvider"
     ],
     "files": [
-        "Helpers/shop_helper.php"
+        "helpers/shop_helper.php"
     ]
 }
