@@ -28,6 +28,7 @@ class Product extends Model
 		'excerpt',
 		'body',
 		'metas',
+        'weight',
     ];
 
     protected $table = 'shop_products';
@@ -100,5 +101,36 @@ class Product extends Model
     public function getPriceLabelAttribute()
     {
         return number_format($this->price);
+    }
+
+    public function getHasSalePriceAttribute()
+    {
+        return $this->sale_price != null;
+    }
+
+    public function getSalePriceLabelAttribute()
+    {
+        return number_format($this->sale_price);
+    }
+
+    public function getDiscountPercentAttribute()
+    {
+        $discountPercent = (($this->price - $this->sale_price) / $this->price) * 100;
+
+        return number_format($discountPercent);
+    }
+
+    public function getStockStatusLabelAttribute()
+    {
+        return self::STOCK_STATUSES[$this->stock_status];
+    }
+
+    public function getStockAttribute()
+    {
+        if (!$this->inventory) {
+            return 0;
+        }
+
+        return $this->inventory->qty;
     }
 }
