@@ -27,6 +27,7 @@ class ProductFactory extends Factory
 			'slug' => Str::slug($name),
 			'price' => fake()->randomFloat(2, 100000, 1000000),
 			'status' => Product::ACTIVE,
+            'weight' => fake()->randomFloat(null,100,500),
             'publish_date' => now(),
             'excerpt' => fake()->text(),
             'body' => fake()->text(),

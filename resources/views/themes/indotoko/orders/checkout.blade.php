@@ -39,7 +39,7 @@
                                             </div>
                                             <!-- address -->
                                             <address>
-                                                <strong>{{ $address->first_name }}  {{ $address->last_name }}</strong>
+                                                <strong>{{ $address->first_name }} + {{ $address->last_name }}</strong>
                                                 <br>
 
                                                 {{ $address->address1 }}
