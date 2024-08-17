@@ -82,7 +82,7 @@
                                 <ul class="list-group list-group-flush available-services" style="display: none;"></ul>
                             </div>
                             <div class="d-flex justify-content-between mt-4">
-                                <a href="{{ route('products.index') }}" class="btn btn-second">Back to Shopping Cart</a>
+                                <a href="{{ route('carts.index') }}" class="btn btn-second">Back to Shopping Cart</a>
                                 <button type="submit" class="btn btn-first">Place Order</button>
                             </div>
                         </form>
